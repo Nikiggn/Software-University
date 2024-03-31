@@ -7,6 +7,7 @@ public class Germany extends BaseTeam{
 
     @Override
     public void play() {
-        setAdvantage(getAdvantage() + 145);
+        int adv = super.getAdvantage() + 145;
+        setAdvantage(adv);
     }
 }

@@ -9,6 +9,7 @@ public class Bulgaria extends BaseTeam{
 
     @Override
     public void play() {
-        setAdvantage(getAdvantage() + 115);
+        int adv = super.getAdvantage() + 115;
+        setAdvantage(adv);
     }
 }

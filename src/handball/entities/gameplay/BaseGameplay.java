@@ -7,15 +7,17 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-public abstract  class  BaseGameplay implements Gameplay{
+import static Java_OOP.EXAM_Preparation._15_August_2023.handball.common.ExceptionMessages.GAMEPLAY_NAME_NULL_OR_EMPTY;
+
+public abstract class BaseGameplay implements Gameplay {
     private String name;
     private int capacity;
     private Collection<Equipment> equipments;
     private Collection<Team> teams;
 
     protected BaseGameplay(String name, int capacity) {
-        this.name = name;
-        this.capacity = capacity;
+        this.setName(name);
+        this.setCapacity(capacity);
         this.equipments = new ArrayList<>();
         this.teams = new ArrayList<>();
     }
@@ -24,7 +26,7 @@ public abstract  class  BaseGameplay implements Gameplay{
     @Override
     public int allProtection() {
         int sum = 0;
-        for (Equipment equipment:equipments) {
+        for (Equipment equipment : equipments) {
             sum += equipment.getProtection();
         }
         return sum;
@@ -47,7 +49,7 @@ public abstract  class  BaseGameplay implements Gameplay{
 
     @Override
     public void teamsInGameplay() {
-        for (Team team: teams) {
+        for (Team team : teams) {
             team.play();
         }
     }
@@ -67,11 +69,22 @@ public abstract  class  BaseGameplay implements Gameplay{
         return this.name;
     }
 
+    private void setName(String name) {
+        if (name == null || name.trim().isEmpty()) {
+            throw new NullPointerException(GAMEPLAY_NAME_NULL_OR_EMPTY);
+        }
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return String.format("%s %s%nTeam: %s%nEquipment: %d, Protection: %d%n",
                 this.name, this.getClass().getSimpleName(),
                 this.teams.stream().map(Team::getName).collect(Collectors.joining(" ")),
                 this.equipments.size(), allProtection());
+    }
+
+    private void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 }

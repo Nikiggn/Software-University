@@ -1,6 +1,6 @@
-package handball.core;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.core;
 
-import handball.common.Command;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.common.Command;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -72,30 +72,34 @@ public class EngineImpl implements Engine {
     }
 
     private String addGameplay(String[] data) {
-        return controller.addGameplay(data[0], data[1]);
+
+        return null;
     }
 
     private String addEquipment(String[] data) {
-        return this.controller.addEquipment(data[0]);
+
+        return null;
     }
 
     private String equipmentRequirement(String[] data) {
-        return this.controller.equipmentRequirement(data[0], data[1]);
+
+        return null;
     }
 
     private String addTeam(String[] data) {
-        return this.controller.addTeam(data[0], data[1], data[2], data[3], Integer.parseInt(data[4]));
 
+        return null;
     }
 
     private String playInGameplay(String[] data) {
 
-        return this.controller.playInGameplay(data[0]);
+
+        return null;
     }
 
     private String percentAdvantage(String[] data) {
 
-        return this.controller.percentAdvantage(data[0]);
+        return null;
     }
 
     private String getStatistics() {

@@ -15,14 +15,15 @@ public abstract class BaseTeam implements Team{
 
     @Override
     public void setName(String name) {
-        if (name == null || name.trim().length() < 1){
+        if (name == null || name.trim().isEmpty()){
             throw  new NullPointerException(TEAM_NAME_NULL_OR_EMPTY);
         }
+        this.name = name;
 
     }
 
     @Override
-    public abstract  void play();
+    public abstract void play();
 
     @Override
     public String getName() {
@@ -35,7 +36,7 @@ public abstract class BaseTeam implements Team{
     }
 
     private void setCountry(String country) {
-        if (country == null || country.trim().length() < 1){
+        if (country == null || country.trim().isEmpty()){
             throw  new NullPointerException(TEAM_COUNTRY_NULL_OR_EMPTY);
         }
         this.country = country;
