@@ -1,23 +1,22 @@
-package handball.core;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.core;
 
-import handball.entities.equipment.ElbowPad;
-import handball.entities.equipment.Equipment;
-import handball.entities.equipment.Kneepad;
-import handball.entities.gameplay.Gameplay;
-import handball.entities.gameplay.Indoor;
-import handball.entities.gameplay.Outdoor;
-import handball.entities.team.Bulgaria;
-import handball.entities.team.Germany;
-import handball.entities.team.Team;
-import handball.repositories.EquipmentRepository;
-import handball.repositories.Repository;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.equipment.ElbowPad;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.equipment.Equipment;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.equipment.Kneepad;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.gameplay.Gameplay;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.gameplay.Indoor;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.gameplay.Outdoor;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.team.Bulgaria;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.team.Germany;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.team.Team;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.repositories.EquipmentRepository;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.repositories.Repository;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-import static handball.common.ConstantMessages.*;
-import static handball.common.ExceptionMessages.*;
-import static handball.common.ExceptionMessages.INVALID_TEAM_TYPE;
+import static Java_OOP.EXAM_Preparation._15_August_2023.handball.common.ConstantMessages.*;
+import static Java_OOP.EXAM_Preparation._15_August_2023.handball.common.ExceptionMessages.*;
 
 public class ControllerImpl implements Controller {
     private Repository equipmentRepository;
