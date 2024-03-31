@@ -1,4 +1,4 @@
-package handball.common;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.common;
 
 public class ConstantMessages {
     public static final String GAMEPLAY_NOT_SUITABLE = "The coverage of the terrain is not suitable.";

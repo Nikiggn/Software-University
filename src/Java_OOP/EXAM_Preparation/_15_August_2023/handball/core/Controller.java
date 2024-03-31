@@ -1,4 +1,4 @@
-package handball.core;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.core;
 
 public interface Controller {
     String addGameplay(String gameplayType, String gameplayName);

@@ -1,7 +1,7 @@
-package handball.entities.gameplay;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.gameplay;
 
-import handball.entities.equipment.Equipment;
-import handball.entities.team.Team;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.equipment.Equipment;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.team.Team;
 
 import java.util.ArrayList;
 import java.util.Collection;

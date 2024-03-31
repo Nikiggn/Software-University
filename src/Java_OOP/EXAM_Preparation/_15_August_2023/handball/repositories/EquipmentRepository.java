@@ -1,6 +1,6 @@
-package handball.repositories;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.repositories;
 
-import handball.entities.equipment.Equipment;
+import Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.equipment.Equipment;
 
 import java.util.ArrayList;
 import java.util.Collection;

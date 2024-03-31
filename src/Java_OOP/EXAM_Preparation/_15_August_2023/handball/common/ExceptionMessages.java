@@ -1,4 +1,4 @@
-package handball.common;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.common;
 
 public class ExceptionMessages {
     public static final String TEAM_NAME_NULL_OR_EMPTY = "Team name cannot be null or empty.";

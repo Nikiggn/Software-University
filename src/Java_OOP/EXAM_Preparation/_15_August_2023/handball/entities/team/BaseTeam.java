@@ -1,6 +1,6 @@
-package handball.entities.team;
+package Java_OOP.EXAM_Preparation._15_August_2023.handball.entities.team;
 
-import static handball.common.ExceptionMessages.*;
+import static Java_OOP.EXAM_Preparation._15_August_2023.handball.common.ExceptionMessages.*;
 
 public abstract class BaseTeam implements Team{
     private String name;
