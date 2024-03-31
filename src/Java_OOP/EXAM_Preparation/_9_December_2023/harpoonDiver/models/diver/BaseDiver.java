@@ -1,5 +1,6 @@
 package Java_OOP.EXAM_Preparation._9_December_2023.harpoonDiver.models.diver;
 
+import Java_OOP.EXAM_Preparation._9_December_2023.harpoonDiver.models.seaCatch.BaseSeaCatch;
 import Java_OOP.EXAM_Preparation._9_December_2023.harpoonDiver.models.seaCatch.SeaCatch;
 
 import static Java_OOP.EXAM_Preparation._9_December_2023.harpoonDiver.common.ExceptionMessages.DIVER_NAME_NULL_OR_EMPTY;
@@ -13,16 +14,17 @@ public abstract class BaseDiver implements Diver{
     protected BaseDiver(String name, double oxygen) {
         this.setName(name);
         this.setOxygen(oxygen);
+        this.seaCatch = new BaseSeaCatch();
     }
 
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
 
     @Override
     public double getOxygen() {
-        return 0;
+        return this.oxygen;
     }
 
     @Override
@@ -32,20 +34,18 @@ public abstract class BaseDiver implements Diver{
 
     @Override
     public SeaCatch getSeaCatch() {
-        return null;
+        return this.seaCatch;
     }
 
     @Override
     public  void shoot() {
-        setOxygen(getOxygen() - 30);
-        if (this.oxygen < 0){
-            setOxygen(0);
-        }
+        this.oxygen = Math.max(0, this.oxygen - 30);
+
     }
 
 
     private void setName(String name) {
-        if (name == null || name.trim().length() < 1){
+        if (name == null || name.trim().isEmpty()){
             throw new NullPointerException(DIVER_NAME_NULL_OR_EMPTY);
         }
         this.name = name;

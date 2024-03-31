@@ -26,7 +26,7 @@ public class DivingSiteImpl implements DivingSite{
     }
 
     public void setName(String name) {
-        if (name == null || name.trim().length() < 1){
+        if (name == null || name.trim().isEmpty()){
             throw new NullPointerException(SITE_NAME_NULL_OR_EMPTY);
         }
         this.name = name;
