@@ -1,4 +1,4 @@
-package Softuniada;
+package _7_Softuniada;
 
 import java.util.Scanner;
 
