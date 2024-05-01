@@ -1,0 +1,11 @@
+h1{        <!-- element seector -->
+    font-size: 50px;
+}
+
+.first{      <!-- class selector -->
+    text-decoration: underline;
+}
+
+#second{  <!-- id selector -->
+    font-style:italic ;
+}
