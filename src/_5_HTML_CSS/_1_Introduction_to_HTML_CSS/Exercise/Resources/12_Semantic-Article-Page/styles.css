@@ -1,0 +1,42 @@
+main{
+    border: 1px solid #b2ad7d;
+    padding: 5px 15px;
+}
+
+section{
+    border: 1px solid #b2ad7d;
+    padding: 5px 15px;
+    font-style: italic;
+    color: #5c6e91;
+}
+
+
+
+
+
+
+
+
+
+body {
+    width: 700px;
+    background-color: #e4e978;
+}
+
+article {
+    padding: 5px;
+    background-color: #f2f4c0;
+}
+
+#first {
+    border: 1px solid #b2ad7d;
+}
+
+#second{
+    border: 1px solid #b2ad7d;
+}
+
+#third{
+    border: 1px solid #b2ad7d;
+}
+
