@@ -1,4 +1,4 @@
-package Lab.While_Loop;
+package _5_HTML_CSS._1_Introduction.Lab.While_Loop;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Exercise.Conditional_Statements;
+package _5_HTML_CSS._1_Introduction.Lab.Exercise.Conditional_Statements;
 
 import java.util.Scanner;
 public class _6_WorldSwimmingRecord {

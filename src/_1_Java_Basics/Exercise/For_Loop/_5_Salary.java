@@ -1,4 +1,4 @@
-package Exercise.For_Loop;
+package _5_HTML_CSS._1_Introduction.Lab.Exercise.For_Loop;
 
 import java.util.Scanner;
 
